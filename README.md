@@ -1,6 +1,6 @@
 # calendarAPI
 Writen by Jitske Bos
-Last update 13 october 2024 20:47
+Last update 14 october 2024 11:16
 
 ## Introduction
 In this manual you will learn how to import data from Google Calendar in Arduino IDE and trigger actions based on upcoming events
@@ -34,7 +34,7 @@ Click on **Create** to create the feed
 
 <img width="640" alt="Scherm­afbeelding 2024-10-13 om 20 11 15" src="https://github.com/user-attachments/assets/35f9bbf2-5afd-40af-bcc1-025728e5988b">
 
-88Open the feed88 you just created by clicking on the blue name
+**Open the feed** you just created by clicking on the blue name
 
 It will be empty for now, until we send data to it using Zapier
 
@@ -71,4 +71,20 @@ Click on **Google Calendar**
 
 <img width="555" alt="Scherm­afbeelding 2024-10-13 om 20 47 14" src="https://github.com/user-attachments/assets/0fd9c1f1-c59b-420b-9221-d717e4af8548">
 
+From here you will build the connection
 
+Under *Trigger Event* choose **Event Start**
+
+<img width="803" alt="Scherm­afbeelding 2024-10-13 om 20 52 20" src="https://github.com/user-attachments/assets/c69cbf37-0e1e-4fe2-a083-3df1ede19fa7">
+
+Click on **Connect Google Calendar** 
+
+Sign in using your Google Account
+
+![Scherm­afbeelding 2024-10-14 om 11 18 03](https://github.com/user-attachments/assets/160a5e75-e51d-4215-8397-ed0dfae38c3d)
+
+## Stap 4: Customise Calendar
+
+**Choose the calendar** in your account that you would like to use
+
+Set the time before you want Zapier to trigger
