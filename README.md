@@ -1,6 +1,6 @@
 # calendarAPI
 Writen by Jitske Bos
-Last update 14 october 2024 11:16
+Last update 14 october 2024 01:11
 
 ## Introduction
 In this manual you will learn how to import data from Google Calendar in Arduino IDE and trigger actions based on upcoming events
@@ -249,9 +249,51 @@ Compile and upload the sketch
 
 <img width="514" alt="Scherm­afbeelding 2024-10-18 om 00 56 28" src="https://github.com/user-attachments/assets/df1bdd53-cb0e-40fe-9833-d4954f87619b">
 
-After I got this error code I tried to download the library in the ArduioIDE program
+After I got this error code I tried to download the library in the ArduioIDE program, because the error says I do not have the library installed.
 
 This didn't work so I googled under the search ***adafruit io wifi.h library***
 
 <img width="937" alt="Scherm­afbeelding 2024-10-18 om 01 00 11" src="https://github.com/user-attachments/assets/03f08617-83aa-4d95-8792-bd6d76dead1f">
 
+Turnes out the code is for a ESP8266 and not an NodeMCU... Stupid mistake
+
+So I tried to look at different options that do include a NodeMCU
+
+I downloaded [these files](https://github.com/adafruit/Adafruit_IO_Arduino) from Github
+
+I followed [this](https://www.instructables.com/Manual-How-to-Send-Events-From-Google-Calender-to-/) manual to help me get my arduino connected to adafruit
+
+And again I got the same error message.
+
+When stumbled again I tried to take a step back and googled ***how to connect a downloaded library to arduinoide***
+
+<img width="763" alt="Scherm­afbeelding 2024-10-18 om 01 32 14" src="https://github.com/user-attachments/assets/45950275-90f5-434c-b15d-b815893fcbd9">
+
+I did what [Seeed Studio Wiki](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/#:~:text=Since%20you%20have%20downloaded%20the,the%20library%20is%20installed%20successfully.) told me and downloaded the library that way
+
+<img width="258" alt="Scherm­afbeelding 2024-10-18 om 01 34 10" src="https://github.com/user-attachments/assets/0610e270-466e-437e-960a-1a37d6c3d956">
+
+After I uploaded my code again, I got a different error message
+
+<img width="509" alt="Scherm­afbeelding 2024-10-18 om 01 36 08" src="https://github.com/user-attachments/assets/d1c01f68-687b-4211-8fbc-5d50bb18426a">
+
+Weird thing is, that when I opened the Serial Monitor it was connecting with my wifi
+
+<img width="694" alt="Scherm­afbeelding 2024-10-18 om 01 38 54" src="https://github.com/user-attachments/assets/0ac330b6-a875-4af1-aa2c-8ac0d881ecd1">
+
+### ChatGPT
+
+I asked ChatGPT from an anwser with the prompt
+
+*"how can I handle this error? In file included from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/AdafruitIO.h:22,
+                 from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/wifi/AdafruitIO_ESP8266.h:20,
+                 from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/AdafruitIO_WiFi.h:46,
+                 from /Users/jitskebos/Downloads/Adafruit_IO_Arduino-master/examples/adafruitio_21_feed_read/config.h:36,
+                 from /Users/jitskebos/Downloads/Adafruit_IO_Arduino-master/examples/adafruitio_21_feed_read/adafruitio_21_feed_read.ino:19:
+/Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/AdafruitIO_Feed.h:21:10: fatal error: Adafruit_MQTT.h: No such file or directory
+   21 | #include "Adafruit_MQTT.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+exit status 1
+
+Compilation error: exit status 1"
