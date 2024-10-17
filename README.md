@@ -81,10 +81,30 @@ Click on **Connect Google Calendar**
 
 Sign in using your Google Account
 
-![Scherm­afbeelding 2024-10-14 om 11 18 03](https://github.com/user-attachments/assets/160a5e75-e51d-4215-8397-ed0dfae38c3d)
+<img width="412" alt="Scherm­afbeelding 2024-10-17 om 12 41 39" src="https://github.com/user-attachments/assets/8c01d53b-9a4b-4004-ad34-e6772d55a3d4">
 
 ## Stap 4: Customise Calendar
 
 **Choose the calendar** in your account that you would like to use
 
 Set the time before you want Zapier to trigger
+
+Click on **Continue**
+
+<img width="425" alt="Scherm­afbeelding 2024-10-17 om 12 44 00" src="https://github.com/user-attachments/assets/712f7629-4443-4f66-8353-97e0d89ff851">
+
+Click **Test Trigger**
+
+<img width="412" alt="Scherm­afbeelding 2024-10-17 om 13 07 49" src="https://github.com/user-attachments/assets/774db8ed-1fec-4394-9374-6a8e9997e386">
+
+## Stap 5: Connect Adafruit
+
+Click **Continue with selected record**
+
+<img width="413" alt="Scherm­afbeelding 2024-10-17 om 13 27 46" src="https://github.com/user-attachments/assets/c38f6e94-b26f-45ea-a12a-3513fafd36ee">
+
+Now you can connect an app to the event
+
+Under *Search apps and tools*
+
+Search **Adafruit** 
