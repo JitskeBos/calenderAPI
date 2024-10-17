@@ -119,3 +119,18 @@ Click on **Connect Adafruit IO**
 
 Sign in using your Adafruit account
 
+### Doesn't it work?
+
+Here are some reasons why connecting your Adafruit account isn't possible
+
+- Make sure the privacy setting on your feed is public
+<img width="233" alt="Scherm­afbeelding 2024-10-17 om 21 32 38" src="https://github.com/user-attachments/assets/8fe71b27-ce89-4202-83a6-4b1ed23c8a87">
+
+To change this
+
+Click on **Privacy**
+
+Change *Private* to **Pubic** and click **Save**
+
+<img width="638" alt="Scherm­afbeelding 2024-10-17 om 21 29 34" src="https://github.com/user-attachments/assets/3637b41b-6ada-4453-af4d-9bee1041b39d">
+
