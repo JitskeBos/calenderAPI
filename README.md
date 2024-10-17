@@ -121,12 +121,14 @@ Sign in using your Adafruit account
 
 ### Doesn't it work?
 
+<img width="633" alt="Scherm­afbeelding 2024-10-17 om 21 28 20" src="https://github.com/user-attachments/assets/e1cb56d5-4e6d-456b-8cb5-faa592b3b8ec">
+
 Here are some reasons why connecting your Adafruit account isn't possible
 
 - Make sure the privacy setting on your feed is public
 <img width="233" alt="Scherm­afbeelding 2024-10-17 om 21 32 38" src="https://github.com/user-attachments/assets/8fe71b27-ce89-4202-83a6-4b1ed23c8a87">
 
-To change this
+Here is how you can change the privacy setting:
 
 Click on **Privacy**
 
@@ -134,3 +136,69 @@ Change *Private* to **Pubic** and click **Save**
 
 <img width="638" alt="Scherm­afbeelding 2024-10-17 om 21 29 34" src="https://github.com/user-attachments/assets/3637b41b-6ada-4453-af4d-9bee1041b39d">
 
+- Check if you'd used the right link
+
+How to get the right link:
+
+Click on **Feed Info**
+
+<img width="239" alt="Scherm­afbeelding 2024-10-17 om 21 36 36" src="https://github.com/user-attachments/assets/e8a16283-f059-48e5-a4d7-1ece8518bde7">
+
+Copy second link labeld **API**
+
+<img width="624" alt="Scherm­afbeelding 2024-10-17 om 21 36 47" src="https://github.com/user-attachments/assets/79fd7ee3-f515-4c4d-93db-565a291434c7">
+
+When you find out that all that was not necessary...
+
+Click on the key button on the upper right side of your screen
+
+<img width="312" alt="Scherm­afbeelding 2024-10-17 om 21 57 06" src="https://github.com/user-attachments/assets/32b98ae9-5b9d-49c6-8430-6e6ce188158c">
+
+Copy the **Active Key** and paste that in the login in Zapier
+
+When loged in, click **continue**
+
+<img width="425" alt="Scherm­afbeelding 2024-10-17 om 12 44 00 kopie" src="https://github.com/user-attachments/assets/59ad1249-9e27-4d5d-9dd1-9510c0aaa103">
+
+## Step 6: Create feed data
+
+<!-- Click on the three dots on the right side of **Feed Key**
+
+Change the value to **Custom** -->
+
+Under *Feed key* select your feed *in this case "activity"*
+
+<img width="400" alt="Scherm­afbeelding 2024-10-17 om 22 43 56" src="https://github.com/user-attachments/assets/89e51c6b-b664-4a58-9e3d-0f65492989ed">
+
+Click on the **+ button** on the right side of *Value*
+
+<img width="383" alt="Scherm­afbeelding 2024-10-17 om 22 46 20" src="https://github.com/user-attachments/assets/c6871791-d647-462a-8707-33a8304ffba9">
+
+Select **"1. Event Begins"**
+
+<img width="400" alt="Scherm­afbeelding 2024-10-17 om 22 46 31" src="https://github.com/user-attachments/assets/a7676971-ed2b-47b8-bc8e-a6aa33f70540">
+
+Repeat this step, but select **"1. Event Ends"**
+
+<img width="420" alt="Scherm­afbeelding 2024-10-17 om 22 50 09" src="https://github.com/user-attachments/assets/f9fac25a-5e80-4787-a413-f89374ff8dd3">
+
+> [!NOTE]
+> Make sure to select them in this order. Be sure you **did not** select the "(pretty)" version, this will mess up the code we need later
+
+## Step 7: Test the Zap
+
+To make sure you correctly linked Zapier and Adafruit, you need to test the connection
+
+Do this by clicking **Test and continue** on the bottom of the screen
+
+<img width="427" alt="Scherm­afbeelding 2024-10-17 om 22 56 04" src="https://github.com/user-attachments/assets/910d882a-93dc-48a3-a291-41d8608000b4">
+
+Open your **Adafruit feed**
+
+You will see a test event from Zapier is added to your feed
+
+<img width="616" alt="Scherm­afbeelding 2024-10-17 om 23 09 37" src="https://github.com/user-attachments/assets/a47334f1-35ca-4539-8a03-ece069bd3a06">
+
+Go back to Zapier and **publish** the Zap
+
+<img width="417" alt="Scherm­afbeelding 2024-10-17 om 23 10 31" src="https://github.com/user-attachments/assets/a13b64f0-eb4f-4da6-833a-ac8206b93df5">
