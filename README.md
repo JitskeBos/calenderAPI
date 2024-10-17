@@ -6,7 +6,7 @@ Last update 14 october 2024 11:16
 In this manual you will learn how to import data from Google Calendar in Arduino IDE and trigger actions based on upcoming events
 
 Items needed for this manual:
-- bla
+- NodeMCU
 - bla
 
 ## Step 1: Create a new feed in Adafruit
@@ -202,3 +202,56 @@ You will see a test event from Zapier is added to your feed
 Go back to Zapier and **publish** the Zap
 
 <img width="417" alt="Scherm­afbeelding 2024-10-17 om 23 10 31" src="https://github.com/user-attachments/assets/a13b64f0-eb4f-4da6-833a-ac8206b93df5">
+
+## Stap 8: Arduino
+
+Plug your **NodeMCU** into your computer
+
+Download [this sketch](https://github.com/SummerDanoe/ReadGoogleCalFeed) from *SummerDanoe*'s GitHub as a ZIP
+
+Open the code in **ArduinoIDE**
+
+Make sure are in the **config.h** code ( I went wrong there the first time)
+
+<img width="321" alt="Scherm­afbeelding 2024-10-17 om 23 47 45" src="https://github.com/user-attachments/assets/f04cc927-6a49-4a9d-b892-ab945751f257">
+
+### Changing the code
+
+To make the code work you're going to need to change some parts
+
+Fill in your **Adafruit username**
+
+Fill in your **AIO Key**
+
+<img width="705" alt="Scherm­afbeelding 2024-10-18 om 00 45 09" src="https://github.com/user-attachments/assets/e5eadf00-65a8-4a0c-ba63-d929940cee4f">
+
+Scroll a bit further down
+
+Fill in your **wifi name**
+
+Fill in your **wifi password**
+
+<img width="653" alt="Scherm­afbeelding 2024-10-18 om 00 50 03" src="https://github.com/user-attachments/assets/39000a56-c3dd-4303-9db1-b128216f30a6">
+
+## Step 9: Read the feed
+
+Open the other file (*readfeedtutorial*)
+
+Add your **Adafruit Username** as the name for the *feed_owner*
+
+And add the name of your **feed** to _your_feed_name_. In this case it was "activity"
+
+<img width="706" alt="Scherm­afbeelding 2024-10-18 om 00 52 44" src="https://github.com/user-attachments/assets/b8f670ae-d999-4aab-b8fc-572269efce15">
+
+Compile and upload the sketch
+
+### Error
+
+<img width="514" alt="Scherm­afbeelding 2024-10-18 om 00 56 28" src="https://github.com/user-attachments/assets/df1bdd53-cb0e-40fe-9833-d4954f87619b">
+
+After I got this error code I tried to download the library in the ArduioIDE program
+
+This didn't work so I googled under the search ***adafruit io wifi.h library***
+
+<img width="937" alt="Scherm­afbeelding 2024-10-18 om 01 00 11" src="https://github.com/user-attachments/assets/03f08617-83aa-4d95-8792-bd6d76dead1f">
+
