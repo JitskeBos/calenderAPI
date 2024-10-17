@@ -107,4 +107,15 @@ Now you can connect an app to the event
 
 Under *Search apps and tools*
 
-Search **Adafruit** 
+Search **Adafruit** and select it by **clicking** on it
+
+<img width="560" alt="Scherm­afbeelding 2024-10-17 om 14 31 47" src="https://github.com/user-attachments/assets/970bdcaa-47a6-4280-a63e-a646de872df6">
+
+Under *Action event* choose **Create Feed Data**
+
+<img width="799" alt="Scherm­afbeelding 2024-10-17 om 14 33 55" src="https://github.com/user-attachments/assets/67e77719-ff4b-4799-bbf6-ae0e0a8f5e21">
+
+Click on **Connect Adafruit IO**
+
+Sign in using your Adafruit account
+
