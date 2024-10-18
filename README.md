@@ -348,7 +348,7 @@ Unfortunately I was not able to create what I wanted:
 
 A IoT product that triggers an action based on the time left for the next calendar appointment
 
-The problem mainly lies with the connection between Zapier, Adafruit and Arduino as I do not have the knowledge to see what went wrong between those three and how to fix it.
+The problem mainly lies with the connection between Zapier, Adafruit and Arduino as I do not have the knowledge and time to see what went wrong between those three and how to fix it.
 
 ### Code idea
 
