@@ -285,7 +285,7 @@ Weird thing is, that when I opened the Serial Monitor it was connecting with my 
 
 I asked ChatGPT from an anwser with the prompt
 
-*"how can I handle this error? In file included from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/AdafruitIO.h:22,
+how can I handle this error? In file included from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/AdafruitIO.h:22,
                  from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/wifi/AdafruitIO_ESP8266.h:20,
                  from /Users/jitskebos/Documents/Arduino/libraries/Adafruit_IO_Arduino/src/AdafruitIO_WiFi.h:46,
                  from /Users/jitskebos/Downloads/Adafruit_IO_Arduino-master/examples/adafruitio_21_feed_read/config.h:36,
@@ -313,3 +313,48 @@ So I clicked Sketch -> include Library -> Adafruit IO Arduino
 <img width="368" alt="Scherm­afbeelding 2024-10-18 om 01 49 57" src="https://github.com/user-attachments/assets/bc42989f-f92b-4290-88b3-b3c88bd15473">
 
 Verified it, and again got the same error.
+
+I searched for the Adafruit MQTT Library on google and found a repository via [docs.arduino](https://docs.arduino.cc/libraries/adafruit-mqtt-library/)
+
+Downloaded the Library from [this](https://github.com/adafruit/Adafruit_MQTT_Library) Github and succesfully uploaded it in ArduinoIDE
+
+I kept getting error messages, and installed this Library trying to solve the issue
+
+- [ArduinoHttpClient](https://github.com/arduino-libraries/ArduinoHttpClient)
+
+Verified the code, and it went trough!!
+
+So I uploaded the code to my board and opend the Serial Monitor to check if it connected to my wifi
+
+## Step 10: Viewing your calendar in Serial Monitor
+
+You would think that by now we would be able to see our calendar appointment in ArduinoIDE
+
+But for some reason Zapier cannot get hold of my Google Calendar data
+
+In Zapier I had to connect my Google account, but it does not read my appointments, instead it created its own start- and end-time based on the time you create the connection
+
+<img width="399" alt="Scherm­afbeelding 2024-10-18 om 02 49 42" src="https://github.com/user-attachments/assets/f820ee4e-54c4-4508-a03d-6622b662b4d0">
+
+<img width="355" alt="Scherm­afbeelding 2024-10-18 om 02 52 57" src="https://github.com/user-attachments/assets/1e4fed2a-662e-4dd3-b61d-a18d3386114f">
+
+So I do have a connection between Zapier, Adafruit and Arduino, but it does not show me the data that I want
+
+## Conclusion
+
+Unfortunately I was not able to create what I wanted:
+
+A IoT product that triggers an action based on the time left for the next calendar appointment
+
+The problem mainly lies with the connection between Zapier, Adafruit and Arduino as I do not have the knowledge to see what went wrong between those three and how to fix it.
+
+### Code idea
+
+```
+var timeTill = starting time - current time
+
+if(timeTill => 10) {
+  brew coffee
+}
+
+```
