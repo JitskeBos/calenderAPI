@@ -245,7 +245,7 @@ And add the name of your **feed** to _your_feed_name_. In this case it was "acti
 
 Compile and upload the sketch
 
-### Error
+## Error
 
 <img width="514" alt="Scherm­afbeelding 2024-10-18 om 00 56 28" src="https://github.com/user-attachments/assets/df1bdd53-cb0e-40fe-9833-d4954f87619b">
 
@@ -297,3 +297,19 @@ compilation terminated.
 exit status 1
 
 Compilation error: exit status 1"
+
+It said that one of the thing i could try is downloading a "Adafruit_MQTT.h" library
+
+So i did; I downloaded two to be sure
+
+<img width="265" alt="Scherm­afbeelding 2024-10-18 om 01 48 01" src="https://github.com/user-attachments/assets/e50245ac-125b-48bd-b801-4c726ea5642f">
+
+And still i got the Exit Error
+
+Another thing ChatGPT said that i had to include the library manually
+
+So I clicked Sketch -> include Library -> Adafruit IO Arduino
+
+<img width="368" alt="Scherm­afbeelding 2024-10-18 om 01 49 57" src="https://github.com/user-attachments/assets/bc42989f-f92b-4290-88b3-b3c88bd15473">
+
+Verified it, and again got the same error.
