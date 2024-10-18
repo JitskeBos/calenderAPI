@@ -1,13 +1,15 @@
 # calendarAPI
 Writen by Jitske Bos
-Last update 14 october 2024 01:11
+Last update 18 october 2024 03:04
 
 ## Introduction
 In this manual you will learn how to import data from Google Calendar in Arduino IDE and trigger actions based on upcoming events
 
 Items needed for this manual:
 - NodeMCU
-- bla
+- Arduino IDE software
+- Zapier account
+- Adafruit account
 
 ## Step 1: Create a new feed in Adafruit
 Go to the [Adafruit website](https://io.adafruit.com)
@@ -359,3 +361,16 @@ if(timeTill => 10) {
   brew coffee
 }
 ```
+
+## Sources
+
+The first part of this manual (until 'Error") is based on the manual from [SummerKrentebol](https://www.instructables.com/Google-Calendar-Events-to-ESP8266/)
+
+Other sourches are
+
+- [SummerDanoe](https://github.com/SummerDanoe/ReadGoogleCalFeed) on GitHub
+- [Adafruit](https://github.com/adafruit/Adafruit_IO_Arduino/tree/master/.github) on GitHub
+- [Adafruit](https://github.com/adafruit/Adafruit_IO_Arduino) on GitHub
+- [SimonINSTRUCT](https://www.instructables.com/Manual-How-to-Send-Events-From-Google-Calender-to-/)
+- [arduino-libraries](https://github.com/arduino-libraries/ArduinoHttpClient) on GitHub
+- ChatGPT
