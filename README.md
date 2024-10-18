@@ -350,11 +350,12 @@ The problem mainly lies with the connection between Zapier, Adafruit and Arduino
 
 ### Code idea
 
+This is a **Rough** sketch of what I wanted to add to the calendar API, if it had worked
+
 ```
 var timeTill = starting time - current time
 
 if(timeTill => 10) {
   brew coffee
 }
-
 ```
